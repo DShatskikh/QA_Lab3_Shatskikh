@@ -5,7 +5,8 @@ using System.Text;
 
 namespace MPT_Laba_6_2_3
 {
-    internal class ClotheRarity : Clothe
+    /// Вещь с наценкой за престиж
+    public class ClotheRarity : Clothe
     {
         private int _rarity = 1;
 

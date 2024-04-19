@@ -5,17 +5,20 @@ using System.Text;
 
 namespace MPT_Laba_6_2_3
 {
+    /// Класс одежды
     public class Clothe
     {
         private protected int _length;
         private protected int _price;
 
+        /// Инициализация
         public void Init(int length, int price)
         {
             _length = length;
             _price = price;
         }
 
+        /// Ввод параметров
         public void Read()
         {
             Console.WriteLine("Введите длину: ");
@@ -24,11 +27,20 @@ namespace MPT_Laba_6_2_3
             _price = Convert.ToInt32(Console.ReadLine());
         }
 
+        /// Выводит параметры
         public virtual void Display()
         {
             Console.WriteLine("Длина: " + _length + " " + "Цена: " + _price);
         }
 
+        /*!
+        Перемножает длину на цену
+        Формула для примера: 
+        \f[
+        finalyPrice = (length * price)
+        \f]
+        \return Стоимость вещи
+        */
         public virtual int GetPrice()
         {
             if(_price < 0 || _length < 0)

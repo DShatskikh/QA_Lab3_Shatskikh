@@ -5,7 +5,8 @@ using System.Text;
 
 namespace MPT_Laba_6_2_3
 {
-    internal class Atelier
+    /// Ателье, хранит 3 вещи
+    public class Atelier
     {
         private Clothe _type1;
         private Clothe _type2;
@@ -16,6 +17,17 @@ namespace MPT_Laba_6_2_3
         private int _costAccessories = 0;
         private String _name;
 
+        /// <param name="price1">Цена 1 вещи</param>
+        /// <param name="lenght1">Длина 1 вещи</param>
+        /// <param name="count1">Колличество 1 вещи</param>
+        /// <param name="price2">Цена 2 вещи</param>
+        /// <param name="lenght2">Длина 2 вещи</param>
+        /// <param name="count2">Колличество 2 вещи</param>
+        /// <param name="price3">Цена 3 вещи</param>
+        /// <param name="lenght3">Длина 3 вещи</param>
+        /// <param name="count3">Колличество 3 вещи</param>
+        /// <param name="costAccessories">Наценка</param>
+        /// <param name="name">Название ателье</param>
         public void Init(int price1, int lenght1, int count1,
                            int price2, int lenght2, int count2,
                            int price3, int lenght3, int count3, int costAccessories, String name)
@@ -35,6 +47,7 @@ namespace MPT_Laba_6_2_3
             _name = name;
         }
 
+        /// Ввод параметров
         public void Read()
         {
             Console.WriteLine("Тип 1");
@@ -56,6 +69,7 @@ namespace MPT_Laba_6_2_3
             Console.WriteLine();
         }
 
+        /// Вывод
         public void Display()
         {
             Console.WriteLine("Имя: " + _name);
@@ -65,6 +79,7 @@ namespace MPT_Laba_6_2_3
             Console.WriteLine("Аксессуары цена: " + _costAccessories);
         }
 
+        /// Стоимость ателье
         public int GetAllPrice()
         {
             return _count1 * _type1.GetPrice()
@@ -73,6 +88,7 @@ namespace MPT_Laba_6_2_3
                 + _costAccessories;
         }
 
+        /// Возвращает самуб дорогую вещь
         public Clothe GetMostExpensive()
         {
             if (_type1.GetPrice() > _type2.GetPrice())
@@ -99,6 +115,7 @@ namespace MPT_Laba_6_2_3
             }
         }
 
+        /// Возвращает имя
         public String GetName()
         {
             return _name;

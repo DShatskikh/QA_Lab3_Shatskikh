@@ -5,7 +5,12 @@ using System.Text;
 
 namespace MPT_Laba_6_2_3
 {
-    internal class Program
+    /// Иконка:
+    /// <img src="C:\Users\s-den\Documents\Programming\Visual Studio\QA_Lab3_Shatskikh\MPT Laba 7_2_3\Icon.png" width="400" height="400" />
+    /// <summary>
+    /// Отсюда запускается программа
+    /// </summary>
+    public class Program
     {
         static void Main(string[] args)
         {

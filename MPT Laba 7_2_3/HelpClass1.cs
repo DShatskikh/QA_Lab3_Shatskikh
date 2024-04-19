@@ -2,6 +2,7 @@
 
 namespace MPT_Laba_6_2_3
 {
+    /// Хелпер с 2 редкими одеждами
     public class HelpClass1 : AbstractClass
     {
         private ClotheRarity Clothe;

@@ -7,6 +7,7 @@ using System.Xml.Linq;
 
 namespace MPT_Laba_6_2_3
 {
+    /// Хелпер с 2 обычными одеждами
     public class HelpClass : AbstractClass
     {
         public Clothe Clothe1;
